@@ -1,5 +1,2 @@
+﻿require 'math/fraction'
 
-class fraction
-
-
-end
