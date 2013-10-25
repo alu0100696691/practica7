@@ -35,5 +35,10 @@ describe Fraction do
                 (-A).to_s.should == "-1/1"
             end
         end
+ describe "aritmeticas" do
+   it "Se debe sumar dos fracciones con + y dar el resultado de forma reducida" do
+     (A+B).to_s.should == "5/4"
+   end
+end
 end
 
