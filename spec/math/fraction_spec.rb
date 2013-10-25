@@ -42,9 +42,12 @@ describe Fraction do
             it "Se debe restar dos fracciones con -" do
                 (A-B).to_s.should == "3/4"
             end
- it "Se debe multiplicar dos fracciones con *" do
-     (A*B).to_s.should == "1/4"
-   end
+            it "Se debe multiplicar dos fracciones con *" do
+                (A*B).to_s.should == "1/4"
+            end
+            it "Se debe dividir dos fracciones con /" do
+                (A/B).to_s.should == "4/1"
+            end
         end
 end
 
