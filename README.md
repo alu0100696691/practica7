@@ -9,3 +9,5 @@ Jose Antonio Rodriguez Leandro
 #Ejecucion Descripcion
         Rake -T
 
+#Generacion HTML
+        Rake html
