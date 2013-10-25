@@ -8,5 +8,8 @@ class Fraction
 
 	attr_reader :n,:d  #automaticamente creamos get @n y get @d
 
+    def to_s
+        "#{@num_}/#{@den_}"
+    end
 
 end
