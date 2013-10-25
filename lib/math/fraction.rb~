@@ -29,6 +29,19 @@ class Fraction
         r.den_=@num_
         r
     end
+    def -@
+        Fraccion.new(-@num_,@den_)
+    end
+    def +(b)
+        r=Fraction.new
+        if (@den_==b.den_)
+            r.num_ = @num_ + b.num_
+            r.den_ = @den_
+        else
+            r.num_ = @num_ * b.den_ + b.num_ * @den_
+            r.den_ = @den_ * b.den_
+        end
+    end
 
 
 

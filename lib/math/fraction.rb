@@ -42,6 +42,16 @@ class Fraction
             r.den_ = @den_ * b.den_
         end
     end
+def -(b)
+    r =Fraccion.new
+    if (@den_ == b.den_)
+        r.num_=@num_- b.num_
+        r.den_=@den_
+     else
+       r.num=@num_ * b.den_ - b.num_ * @den_
+       r.den_ = @den_ * b.den_
+     end     
+  end
 
 
 
