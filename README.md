@@ -1,10 +1,11 @@
 #Practica  6
 
-kevin isaac robayna hernandez  
-jose antonio rodriguez leandro
+Kevin Isaac Robayna Hernandez  
+Jose Antonio Rodriguez Leandro
 
-test
+#Ejecucion de los test
+        Rake test
 
-rake test
-
+#Ejecucion Descripcion
+        Rake -T
 
