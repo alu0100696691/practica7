@@ -7,3 +7,5 @@ def gcd(u, v)
 end
 
 puts gcd(6,3)
+
+

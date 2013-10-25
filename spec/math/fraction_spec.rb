@@ -16,7 +16,7 @@ describe Fraction do
                 A.to_s.should == "1/1"
             end
             it "se debe mostrar en consola la fraccion en formato flotante" do
-                A.to_f.should == "1.00"
+                A.to_f.should == 1.0
             end
         end
 
@@ -46,7 +46,7 @@ describe Fraction do
                 (A*B).to_s.should == "1/4"
             end
             it "Se debe dividir dos fracciones con /" do
-                (A/B).to_s.should == "4/1"
+                (A/B).to_s.should == "1/4"
             end
         end
         describe "Comparacion" do
