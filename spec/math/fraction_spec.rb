@@ -19,5 +19,15 @@ describe Fraction do
                 A.to_f.should == "1.00"
             end
         end
+
+        describe "Unarias" do
+            it "Se debe comparar si dos fracciones son iguales con ==" do
+                (A==B).should == false
+            end
+
+            it "Se debe calcular el valor absoluto de una fraccion con el meto abs" do
+                A.abs.should == 1
+            end
+        end
 end
 

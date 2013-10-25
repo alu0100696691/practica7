@@ -12,8 +12,11 @@ class Fraction
         "#{@num_}/#{@den_}"
     end
     def to_f 
-    c = @num_.to_f/@den_.to_f
-    c
-    end	
+        c = @num_.to_f/@den_.to_f
+        c
+    end
 
+    def ==(B)
+        return @num_.eql?(B.num_) && @den_.eql?(B.den_)
+    end
 end
