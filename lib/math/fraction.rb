@@ -62,13 +62,26 @@ class Fraction
 
         r
     end
-def /(b)
-    r =Fraccion.new
-    r.num:=@num_ / b.num_
-    r.den_=@den_ * b.den_
+    def /(b)
+        r =Fraccion.new
+        r.num:=@num_ / b.num_
+        r.den_=@den_ * b.den_
+        
+        r
+    end
 
-    r
-  end
+    #METODO STAR WARS! HACE TODAS LAS COMPARACIONES
+    def <=>(b)
+        self.to_f <=> b.to_f
+    end 
+
+
 
 
 end
+
+
+
+
+
+
