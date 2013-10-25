@@ -12,6 +12,9 @@ describe Fraction do
             it "Existe un denominador" do
                 A.den_.should == 1
             end
+		it "se debe mostrar en consola de la forma a/b" do
+		A.to_s.should == "1/1"
+		end	
         end
 end
 
