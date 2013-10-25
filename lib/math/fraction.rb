@@ -1,3 +1,4 @@
+require "gcd.rb"
 
 class Fraction
 	def initialize(n, d)
@@ -41,7 +42,9 @@ class Fraction
             r.num_ = @num_ * b.den_ + b.num_ * @den_
             r.den_ = @den_ * b.den_
         end
-        r
+        #minimizamos 
+	     r.num_,r.den_ = minimiza(r.num_,r.den_)
+	     return r
     end
     def -(b)
         r =Fraccion.new
@@ -52,7 +55,9 @@ class Fraction
             r.num=@num_ * b.den_ - b.num_ * @den_
             r.den_ = @den_ * b.den_
         end
-        r
+        #minimizamos 
+	     r.num_,r.den_ = minimiza(r.num_,r.den_)
+	     return r
     end
 
     def *(b)
@@ -60,20 +65,31 @@ class Fraction
         r.num:=@num_ * b.num_
         r.den_=@den_ * b.den_
 
-        r
+        #minimizamos 
+	     r.num_,r.den_ = minimiza(r.num_,r.den_)
+	     return r
     end
     def /(b)
         r =Fraccion.new
         r.num:=@num_ / b.num_
         r.den_=@den_ * b.den_
         
-        r
+        #minimizamos 
+	     r.num_,r.den_ = minimiza(r.num_,r.den_)
+	     return r
     end
 
     #METODO STAR WARS! HACE TODAS LAS COMPARACIONES
     def <=>(b)
         self.to_f <=> b.to_f
     end 
+
+def minimiza(x,y)
+     d = gcd(x,y)
+     x = x/d
+     y = y/d
+     return x,y
+  end
 
 
 
