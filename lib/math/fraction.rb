@@ -16,11 +16,20 @@ class Fraction
         c
     end
 
-    def ==(B)
-        return @num_.eql?(B.num_) && @den_.eql?(B.den_)
+    def ==(b)
+        return @num_.eql?(b.num_) && @den_.eql?(b.den_)
     end
-	def abs
-	    c = @num_.to_f/@den_.to_f
-	    return c.abs
-	  end
+    def abs
+        c = @num_.to_f/@den_.to_f
+        return c.abs
+    end
+    def reciprocal
+        r=Fraction.new
+        r.num_=@den_
+        r.den_=@num_
+        r
+    end
+
+
+
 end
