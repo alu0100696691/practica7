@@ -49,5 +49,19 @@ describe Fraction do
                 (A/B).to_s.should == "4/1"
             end
         end
+ describe "Comparacion" do
+   it "Se debe de poder comprobar si una fracion es menor que otra" do
+     (B<A).should == true 
+   end
+   it "Se debe de poder comprobar si una fracion es mayor que otra" do
+     (A>B).should == true
+   end
+   it " Se debe de poder comprobar si una fracion es menor o igual que otra" do
+     (B<=A).should == true
+   end
+   it "Se debe de poder comprobar si una fracion es mayor o igual que otra" do
+     (A>=B).should == true
+   end
+end
 end
 

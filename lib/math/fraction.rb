@@ -62,6 +62,13 @@ class Fraction
 
         r
     end
+def /(b)
+    r =Fraccion.new
+    r.num:=@num_ / b.num_
+    r.den_=@den_ * b.den_
+
+    r
+  end
 
 
 end
