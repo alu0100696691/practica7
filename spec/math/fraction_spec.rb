@@ -28,6 +28,9 @@ describe Fraction do
             it "Se debe calcular el valor absoluto de una fraccion con el meto abs" do
                 A.abs.should == 1
             end
+it "Se debe calcular el reciproco" do
+     (B.reciprocal).to_s.should == "4/1"
+   end
         end
 end
 

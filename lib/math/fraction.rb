@@ -19,4 +19,8 @@ class Fraction
     def ==(B)
         return @num_.eql?(B.num_) && @den_.eql?(B.den_)
     end
+	def abs
+	    c = @num_.to_f/@den_.to_f
+	    return c.abs
+	  end
 end
