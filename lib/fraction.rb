@@ -1,2 +1,2 @@
-﻿require 'math/fraction'
+﻿require 'math/fraction.rb'
 

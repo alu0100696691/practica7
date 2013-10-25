@@ -1,12 +1,8 @@
 ﻿desc 'run rspec tests'
 task :spec do
-  sh "rspec -Ilib -Ispec spec/math/fraction_spec.rb"
+  sh "rspec --color --format documentation --Ilib --Ispec spec/math/fraction_spec.rb"
 end
 
-desc "build HTML from README.md"
-task :html do
-    sh "kramdown README.md  > README.html"
-end
 
 desc "install gems"
 task :install do
