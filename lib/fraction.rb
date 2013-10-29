@@ -18,8 +18,7 @@ class Fraction
         "#{@num_}/#{@den_}"
     end
     def to_f 
-        c = @num_.to_f/@den_.to_f
-        c
+        @num_.to_f/@den_.to_f
     end
 
     def ==(b)

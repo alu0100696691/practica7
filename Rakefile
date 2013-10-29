@@ -1,6 +1,6 @@
 ﻿desc "practica"
 task :default do
-  sh "ruby -Ilib /lib/math/fraction.rb"
+  sh "ruby -Ilib /lib/fraction.rb"
 end
 
 desc "Ejecucion de pruebas rspec"

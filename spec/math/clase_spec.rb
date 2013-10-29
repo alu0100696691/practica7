@@ -7,8 +7,8 @@ describe Fraction do
     end 
 
     describe "Test de clase: |f1 * f2| Multiplicacion y ABS" do
-    	it "prueba |f1 * f2|" do
-		(A*B).abs.to_s.should == "0.25"
-	end
+        it "prueba |f1 * f2|" do
+            (A*B).abs.to_s.should == "0.25"
+        end
     end
 end
