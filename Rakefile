@@ -5,7 +5,7 @@ RSpec::Core::RakeTask.new
 task :default => :spec
 ﻿
 desc "Ejecucion de pruebas rspec"
-task :test do
+task :spec do
   sh "rspec --color --format documentation -Ilib -Ispec spec/math/fraction_spec.rb"
 end
 
