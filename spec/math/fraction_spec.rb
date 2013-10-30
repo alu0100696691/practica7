@@ -1,4 +1,3 @@
-# encoding: UTF-8
 require "fraction.rb"
 
 describe Fraction do
@@ -32,7 +31,7 @@ describe Fraction do
             it "Se debe calcular el reciproco" do
                 (B.reciprocal).to_s.should == "4/1"
             end
-            it "Calcular el opuesto de la fraccion con ' - '" do
+            it "Calcular el opuesto de la fraccion con  - " do
                 (-A).to_s.should == "-1/1"
             end
         end
