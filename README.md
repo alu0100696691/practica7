@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-#LPP
-##Practica 7
-##Estado: [![Build Status](https://travis-ci.org/alu0100696691/practica7.png?branch=development)](https://travis-ci.org/alu0100696691/practica7)
-##Autores
+##LPP - Practica 7
+##Estado: [![Build Status](https://travis-ci.org/alu0100696691/practica7.png?branch=master)](https://travis-ci.org/alu0100696691/practica7)
 	Kevin Isaac Robayna Hernandez  
 	Jose Antonio Rodriguez Leandro
 ##Jerarquia Codigo
-=======
-#Practica 7 
-
-[![Build Status](https://travis-ci.org/alu0100696691/practica7.png?branch=master)](https://travis-ci.org/alu0100696691/practica7)
->>>>>>> master
-
 ```
 practica7/
 ├── Gemfile
@@ -25,9 +16,8 @@ practica7/
         ├── clase_spec.rb
         └── fraction_spec.rb
 ```
-
 ##Ejecucion de los Test
-        Rake
+	Rake
 ##Ejecucion Descripcion
         Rake -T
 ##Generacion HTML
