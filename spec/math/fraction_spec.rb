@@ -5,6 +5,7 @@ describe Fraction do
             A = Fraction.new(1,1)
             B = Fraction.new(1,4)
         end
+
         describe" basicas" do
             it "Existe un numerador" do
                 A.num_.should == 1
@@ -31,10 +32,11 @@ describe Fraction do
             it "Se debe calcular el reciproco" do
                 (B.reciprocal).to_s.should == "4/1"
             end
-            it "Calcular el opuesto de la fraccion con  - " do
+            it "Calcular el opuesto de la fraccion con -" do
                 (-A).to_s.should == "-1/1"
             end
         end
+
         describe "aritmeticas" do
             it "Se debe sumar dos fracciones con +" do
                 (A+B).to_s.should == "5/4"
@@ -49,17 +51,18 @@ describe Fraction do
                 (A/B).to_s.should == "1/4"
             end
         end
+
         describe "Comparacion" do
-            it "Se debe de poder comprobar si una fracion es menor que otra" do
+            it "Se debe de poder comprobar si una fraccion es menor que otra" do
                 (B<A).should == true 
             end
-            it "Se debe de poder comprobar si una fracion es mayor que otra" do
+            it "Se debe de poder comprobar si una fraccion es mayor que otra" do
                 (A>B).should == true
             end
-            it "Se debe de poder comprobar si una fracion es menor o igual que otra" do
+            it "Se debe de poder comprobar si una fraccion es menor o igual que otra" do
                 (B<=A).should == true
             end
-            it "Se debe de poder comprobar si una fracion es mayor o igual que otra" do
+            it "Se debe de poder comprobar si una fraccion es mayor o igual que otra" do
                 (A>=B).should == true
             end
         end
