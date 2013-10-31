@@ -1,7 +1,3 @@
-# encoding: UTF-8
-# coding: UTF-8
-# -*- coding: UTF-8 -*-
-
 require "fraction.rb"
 
 describe Fraction do
@@ -9,6 +5,7 @@ describe Fraction do
             A = Fraction.new(1,1)
             B = Fraction.new(1,4)
         end
+
         describe" basicas" do
             it "Existe un numerador" do
                 A.num_.should == 1
@@ -39,6 +36,7 @@ describe Fraction do
                 (-A).to_s.should == "-1/1"
             end
         end
+
         describe "aritmeticas" do
             it "Se debe sumar dos fracciones con +" do
                 (A+B).to_s.should == "5/4"
@@ -53,6 +51,7 @@ describe Fraction do
                 (A/B).to_s.should == "1/4"
             end
         end
+
         describe "Comparacion" do
             it "Se debe de poder comprobar si una fraccion es menor que otra" do
                 (B<A).should == true 
@@ -68,4 +67,3 @@ describe Fraction do
             end
         end
 end
-

@@ -1,9 +1,4 @@
-﻿# encoding: UTF-8
-# coding: UTF-8
-# -*- coding: UTF-8 -*-
-
-
-$:.unshift File.dirname(__FILE__) + 'lib'
+﻿$:.unshift File.dirname(__FILE__) + 'lib'
 
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new

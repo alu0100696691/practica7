@@ -1,9 +1,4 @@
-# encoding: UTF-8
-# coding: UTF-8
-# -*- coding: UTF-8 -*-
-
 require "gcd.rb"
-
 
 class Fraction
     include Comparable
@@ -16,7 +11,8 @@ class Fraction
             @num_ = args[0]
             @den_ = 1
         end
-    end	
+    end
+
     attr_accessor :num_,:den_  
     
     def to_s
@@ -30,7 +26,6 @@ class Fraction
         return @num_.eql?(b.num_) && @den_.eql?(b.den_)
     end
 
-
     def abs
         c = @num_.to_f/@den_.to_f
         return c.abs
@@ -42,7 +37,6 @@ class Fraction
         f.den_ = @num_
         f
     end
-
 
     def -@
         Fraction.new(-@num_,@den_)
@@ -57,9 +51,8 @@ class Fraction
             r.num_ = @num_ * b.den_ + b.num_ * @den_
             r.den_ = @den_ * b.den_
         end
-         
-	     r.num_,r.den_ = minimiza(r.num_,r.den_)
-	     return r
+	r.num_,r.den_ = minimiza(r.num_,r.den_)
+	return r
     end
     
     def -(b)
@@ -71,31 +64,25 @@ class Fraction
             r.num_=@num_ * b.den_ - b.num_ * @den_
             r.den_ = @den_ * b.den_
         end
-         
-	     r.num_,r.den_ = minimiza(r.num_,r.den_)
-	     return r
+	r.num_,r.den_ = minimiza(r.num_,r.den_)
+	return r
     end
 
     def *(b)
         r =Fraction.new
         r.num_=@num_ * b.num_
         r.den_=@den_ * b.den_
-
-         
-	     r.num_,r.den_ = minimiza(r.num_,r.den_)
-	     return r
+	r.num_,r.den_ = minimiza(r.num_,r.den_)
+	return r
     end
     def /(b)
         r =Fraction.new
         r.num_=@num_ / b.num_
         r.den_=@den_ * b.den_
-        
-         
-	     r.num_,r.den_ = minimiza(r.num_,r.den_)
-	     return r
+	r.num_,r.den_ = minimiza(r.num_,r.den_)
+	return r
     end
-
-    
+ 
     def <=>(b)
         self.to_f <=> b.to_f
     end 
@@ -107,11 +94,3 @@ class Fraction
         return x,y
     end
 end
-
-
-
-
-
-
-
-
