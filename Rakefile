@@ -1,10 +1,11 @@
-﻿desc "practica"
-task :default do
-  sh "ruby -Ilib /lib/fraction.rb"
-end
+﻿$:.unshift File.dirname(__FILE__) + 'lib'
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new
+
+task :default => :spec
 
 desc "Ejecucion de pruebas rspec"
-task :test do
+task :spec do
   sh "rspec --color --format documentation -Ilib -Ispec spec/math/fraction_spec.rb"
 end
 
