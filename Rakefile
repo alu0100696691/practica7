@@ -1,4 +1,6 @@
-﻿# encoding: utf-8
+﻿# encoding: UTF-8
+# coding: UTF-8
+# -*- coding: UTF-8 -*-
 
 
 $:.unshift File.dirname(__FILE__) + 'lib'

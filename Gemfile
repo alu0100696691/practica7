@@ -1,5 +1,6 @@
-# encoding: utf-8
-
+# encoding: UTF-8
+# coding: UTF-8
+# -*- coding: UTF-8 -*-
 
 source 'https://rubygems.org'
 
