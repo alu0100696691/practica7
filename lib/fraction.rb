@@ -1,5 +1,6 @@
 require "gcd.rb"
 
+
 class Fraction
     include Comparable
     def  initialize (*args)
