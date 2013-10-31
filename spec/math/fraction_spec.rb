@@ -31,7 +31,7 @@ describe Fraction do
             it "Se debe calcular el reciproco" do
                 (B.reciprocal).to_s.should == "4/1"
             end
-            it "Calcular el opuesto de la fraccion con ' - '" do
+            it "Calcular el opuesto de la fraccion con -" do
                 (-A).to_s.should == "-1/1"
             end
         end
@@ -50,16 +50,16 @@ describe Fraction do
             end
         end
         describe "Comparacion" do
-            it "Se debe de poder comprobar si una fracion es menor que otra" do
+            it "Se debe de poder comprobar si una fraccion es menor que otra" do
                 (B<A).should == true 
             end
-            it "Se debe de poder comprobar si una fracion es mayor que otra" do
+            it "Se debe de poder comprobar si una fraccion es mayor que otra" do
                 (A>B).should == true
             end
-            it "Se debe de poder comprobar si una fracion es menor o igual que otra" do
+            it "Se debe de poder comprobar si una fraccion es menor o igual que otra" do
                 (B<=A).should == true
             end
-            it "Se debe de poder comprobar si una fracion es mayor o igual que otra" do
+            it "Se debe de poder comprobar si una fraccion es mayor o igual que otra" do
                 (A>=B).should == true
             end
         end

@@ -12,7 +12,7 @@ class Fraction
             @den_ = 1
         end
     end	
-    attr_accessor :num_,:den_  #automaticamente 
+    attr_accessor :num_,:den_  
     
     def to_s
         "#{@num_}/#{@den_}"
@@ -52,7 +52,7 @@ class Fraction
             r.num_ = @num_ * b.den_ + b.num_ * @den_
             r.den_ = @den_ * b.den_
         end
-        #minimizamos 
+         
 	     r.num_,r.den_ = minimiza(r.num_,r.den_)
 	     return r
     end
@@ -66,7 +66,7 @@ class Fraction
             r.num_=@num_ * b.den_ - b.num_ * @den_
             r.den_ = @den_ * b.den_
         end
-        #minimizamos 
+         
 	     r.num_,r.den_ = minimiza(r.num_,r.den_)
 	     return r
     end
@@ -76,7 +76,7 @@ class Fraction
         r.num_=@num_ * b.num_
         r.den_=@den_ * b.den_
 
-        #minimizamos 
+         
 	     r.num_,r.den_ = minimiza(r.num_,r.den_)
 	     return r
     end
@@ -85,12 +85,12 @@ class Fraction
         r.num_=@num_ / b.num_
         r.den_=@den_ * b.den_
         
-        #minimizamos 
+         
 	     r.num_,r.den_ = minimiza(r.num_,r.den_)
 	     return r
     end
 
-    #METODO STAR WARS! HACE TODAS LAS COMPARACIONES
+    
     def <=>(b)
         self.to_f <=> b.to_f
     end 
@@ -103,11 +103,7 @@ class Fraction
     end
 end
 
-##
-#
-#Fin del codigo
-#
-#
+
 
 
 
